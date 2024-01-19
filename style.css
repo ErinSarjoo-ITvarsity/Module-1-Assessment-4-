@@ -1,0 +1,59 @@
+th{
+	font-weight: 800;
+	text-shadow: 1px 1px 2px grey;
+	text-decoration: underline;
+}
+
+
+table, th, td {
+	border-collapse: collapse;
+	border-width: 2px;
+	border-style: solid;
+	border: 1px;
+	border-color: #cccccc;
+	border-radius: 10px;
+	background-image: linear-gradient(white, #d3fba2);
+
+}
+
+
+th, td {
+	background-color: #ffffff;
+	font-size: 20px;
+	border-spacing: 10px;
+	padding: 15px; 
+	border-bottom: 15px solid transparent;  
+	background-clip: padding-box;
+}
+
+
+body {
+    /* Set the Serial counter to 0 */
+    counter-reset: Serial; 
+	 background-color: #cccccc;
+    background-image: linear-gradient(#b4f65a, #e2fdc1, #b4f65a);
+}
+
+
+table {
+    border-collapse: separate;
+	text-align: center;	
+}
+
+
+tr td:first-child:before {
+    /* Increment the Serial counter */
+    counter-increment: Serial;
+
+    /* Display the counter */
+    content: "#" counter(Serial); 
+	
+}
+
+
+h1{
+	text-decoration: underline;
+  text-shadow: 2px 2px 5px grey;
+}
+
+
